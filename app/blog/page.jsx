@@ -1,6 +1,6 @@
+import Heading from "@/components/Heading";
 import Link from "next/link";
 import React from "react";
-import Heading from "../../components/Heading";
 
 export default function BlogPage() {
   return (
