@@ -1,15 +1,10 @@
-"use client";
-import { useEffect } from "react";
+import Heading from "../components/Heading";
 
 export default function Home() {
-  useEffect(() => {
-    window.alert("hello");
-  }, []);
-  console.log("hello");
-
   return (
     <div>
-      <h1>Home</h1>
+      <Heading>Home</Heading>
+      <p>Hello World</p>
     </div>
   );
 }

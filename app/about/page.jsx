@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import Heading from "../../components/Heading";
 
 export default function AboutPage() {
-  return (
-    <div>AboutPage</div>
-  )
+  return <Heading>AboutPage</Heading>;
 }

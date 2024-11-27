@@ -1,5 +1,6 @@
 import React from "react";
+import Heading from "../../components/Heading";
 
 export default function ContactPage() {
-  return <div>ContactPage</div>;
+  return <Heading>ContactPage</Heading>;
 }

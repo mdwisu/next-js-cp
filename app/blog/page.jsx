@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import Heading from "../../components/Heading";
 
 export default function BlogPage() {
   return (
     <>
-      <h1>Blog</h1>
+      <Heading>Blog</Heading>
       <p>list of posts</p>
       <ul>
         <li>
