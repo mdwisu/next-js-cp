@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/contact" prefetch={false}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </nav>
