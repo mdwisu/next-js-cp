@@ -4,10 +4,10 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col p-4 min-h-screen">
         <header>
           <nav>
-            <ul>
+            <ul className="flex gap-2">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
             </ul>
           </nav>
         </header>
-        <main>{children}</main>
-        <footer>footer</footer>
+        <main className="py-3 grow">{children}</main>
+        <footer className="border-t py-3 text-center text-xs">footer</footer>
       </body>
     </html>
   );
