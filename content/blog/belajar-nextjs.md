@@ -1,3 +1,10 @@
+---
+title: "Belajar Next.js"
+image: "/images/image-1.jpg"
+date: "26/11/2024"
+author: "admin"
+---
+
 ## What is Next.js?
 Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.
 
