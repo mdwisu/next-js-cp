@@ -17,7 +17,7 @@ export default async function PostPage() {
         height={500}
         alt="image-1"
       />
-      <article dangerouslySetInnerHTML={{ __html: html }} />
+      <article dangerouslySetInnerHTML={{ __html: html }} className="prose"/>
     </div>
   );
 }
