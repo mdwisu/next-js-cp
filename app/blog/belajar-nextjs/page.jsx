@@ -1,23 +1,19 @@
 import Heading from "@/components/Heading";
 import Image from "next/image";
 import React from "react";
-import { readFile } from "fs/promises";
 import { marked } from "marked";
-import matter from "gray-matter";
+import { getPost } from "@/lib/post";
 
 export default async function PostPage() {
-  const text = await readFile("./content/blog/belajar-nextjs.md", "utf8");
-  const {
-    content,
-    data: { title, image, date, author },
-  } = matter(text);
+  const { data, content } = await getPost("belajar-nextjs");
+  console.log(data, content);
 
+  const { title, date, author, image } = data;
   const html = marked(content);
 
   return (
     <div>
       <Heading>{title}</Heading>
-      <p>Belajar Next js</p>
       <p className="italic text-sm pb-2">
         {date} - {author}
       </p>
