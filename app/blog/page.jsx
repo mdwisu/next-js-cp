@@ -12,6 +12,19 @@ export default async function BlogPage() {
     <>
       <Heading>Blog</Heading>
       <p>list of posts</p>
+
+      {listPost.map((post) => {
+        return (
+          <PostCard
+            key={post.slug}
+            title={post.data.title}
+            href={`/blog/${post.slug}`}
+            date={post.data.date}
+            author={post.data.author}
+            image={post.data.image}
+          />
+        )
+      })}
     </>
   );
 }
