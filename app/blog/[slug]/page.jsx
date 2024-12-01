@@ -4,10 +4,8 @@ import React from "react";
 import { marked } from "marked";
 import { getPost } from "@/lib/post";
 
-export default async function PostPage() {
-  const { data, content } = await getPost("belajar-nextjs");
-  console.log(data, content);
-
+export default async function PostPage({ params: { slug } }) {
+  const { data, content } = await getPost(slug);
   const { title, date, author, image } = data;
   const html = marked(content);
 
