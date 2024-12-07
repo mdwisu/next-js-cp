@@ -1,7 +1,6 @@
 import Heading from "@/components/Heading";
 import PostCard from "@/components/PostCard";
 import { getAllPosts } from "@/lib/post";
-import Link from "next/link";
 import React from "react";
 
 export default async function BlogPage() {
@@ -18,12 +17,13 @@ export default async function BlogPage() {
           <PostCard
             key={post.slug}
             title={post.data.title}
+            description={post.data.description}
             href={`/blog/${post.slug}`}
             date={post.data.date}
             author={post.data.author}
             image={post.data.image}
           />
-        )
+        );
       })}
     </>
   );

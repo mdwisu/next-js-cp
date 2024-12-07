@@ -1,13 +1,11 @@
 ---
-title: "Belajar Next.js"
-description: "
-Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications."
-image: "/images/image-1.jpg"
+title: "Belajar Route Next.js"
+image: "/images/image-2.jpg"
 date: "26/11/2024"
 author: "admin"
 ---
 
-## What is Next.js?
+## What is Route Next.js?
 
 Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.
 
