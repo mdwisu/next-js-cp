@@ -1,40 +1,17 @@
 {
-  "data": [
-    {
+  "data": {
+    "id": 2,
+    "documentId": "hgbbn4k82p1r7w4dg2w37utm",
+    "slug": "belajar-strapi",
+    "title": "Belajar Strapi",
+    "description": "ini description singkatnya",
+    "publishedAt": "2024-12-21T12:11:47.278Z",
+    "body": "ini adalah bodynya dengan **bold**",
+    "image": {
       "id": 4,
-      "documentId": "xn0v9l3agctuhlkriye7utl3",
-      "slug": "belajar-next-js",
-      "title": "belajar next js",
-      "description": "ini description singkatnya",
-      "publishedAt": "2024-12-21T12:57:08.573Z",
-      "body": "asdfasdfasdfasdf **asdfasdfasfd**",
-      "image": {
-        "id": 8,
-        "documentId": "n7tzjw4z4ugqithixpajonzf",
-        "url": "/uploads/beautiful_picture_754575a9f8.jpeg"
-      }
-    },
-    {
-      "id": 2,
-      "documentId": "hgbbn4k82p1r7w4dg2w37utm",
-      "slug": "belajar-strapi",
-      "title": "Belajar Strapi",
-      "description": "ini description singkatnya",
-      "publishedAt": "2024-12-21T12:11:47.278Z",
-      "body": "ini adalah bodynya dengan **bold**",
-      "image": {
-        "id": 4,
-        "documentId": "nhekbt7ngueneqbjb47umudh",
-        "url": "/uploads/coffee_art_cc97bf6196.jpeg"
-      }
+      "documentId": "nhekbt7ngueneqbjb47umudh",
+      "url": "/uploads/coffee_art_cc97bf6196.jpeg"
     }
-  ],
-  "meta": {
-    "pagination": {
-      "page": 1,
-      "pageSize": 3,
-      "pageCount": 1,
-      "total": 2
-    }
-  }
+  },
+  "meta": {}
 }

@@ -2,10 +2,15 @@ import { writeFileSync } from "fs";
 import qs from "qs";
 
 const url =
-  "http://127.0.0.1:1337/api/posts" +
+  "http://127.0.0.1:1337/api/posts/hgbbn4k82p1r7w4dg2w37utm" +
   "?" +
   qs.stringify(
     {
+      filters: {
+        slug: {
+          $eq: "belajar-strapi",
+        },
+      },
       fields: ["slug", "title", "description", "publishedAt", "body"],
       populate: {
         image: {
@@ -14,7 +19,8 @@ const url =
       },
       sort: ["publishedAt:desc"],
       pagination: {
-        pageSize: 3,
+        pageSize: 1,
+        withCount: false,
       },
     },
     {
