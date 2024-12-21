@@ -5,7 +5,8 @@ import { marked } from "marked";
 import { getPost } from "@/lib/post";
 import ShareLinkButoon from "@/components/ShareLinkButoon";
 
-export async function generateMetadata({ params: { slug } }) {
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
   const post = await getPost(slug);
   return {
     title: post.title,
@@ -13,7 +14,8 @@ export async function generateMetadata({ params: { slug } }) {
   };
 }
 
-export default async function PostPage({ params: { slug } }) {
+export default async function PostPage({ params }) {
+  const { slug } = await params;
   const { data, content } = await getPost(slug);
   const { title, date, author, image } = data;
   const html = marked(content);
