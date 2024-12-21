@@ -3,7 +3,10 @@ import Navbar from "../components/Navbar";
 import { roboto, poppins } from "./fonts";
 
 export const metadata = {
-  title: "Situs Next.js",
+  title: {
+    default: "Situs Next.js",
+    template: "%s | Next.js",
+  },
   description: "Belajar Next.js",
 };
 
