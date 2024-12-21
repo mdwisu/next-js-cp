@@ -15,12 +15,12 @@ export default async function BlogPage() {
         return (
           <PostCard
             key={post.slug}
-            title={post.data.title}
-            description={post.data.description}
+            title={post.title}
+            description={post.description}
             href={`/blog/${post.slug}`}
-            date={post.data.date}
-            author={post.data.author}
-            image={post.data.image}
+            date={post.date}
+            author={post.author}
+            image={post.image}
           />
         );
       })}
