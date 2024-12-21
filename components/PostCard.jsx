@@ -13,7 +13,7 @@ export default function PostCard({
     <div className="flex flex-wrap">
       <div className="mb-4 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-2/12">
         <div className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg">
-          <Image
+          <img
             src={image}
             alt={title}
             className="w-full"

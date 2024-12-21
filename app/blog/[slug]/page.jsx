@@ -34,7 +34,7 @@ export default async function PostPage({ params }) {
         </p>
         <ShareLinkButoon />
       </div>
-      <Image src={image} width={500} height={500} alt="image-1" />
+      <img src={image} width={500} height={500} alt="image-1" />
       <article dangerouslySetInnerHTML={{ __html: html }} className="prose" />
     </div>
   );
