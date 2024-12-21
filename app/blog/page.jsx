@@ -5,7 +5,6 @@ import React from "react";
 
 export default async function BlogPage() {
   const listPost = await getAllPosts();
-  console.log(listPost);
 
   return (
     <>
@@ -13,7 +12,6 @@ export default async function BlogPage() {
       <p>list of posts</p>
 
       {listPost.map((post) => {
-        console.log(post);
         return (
           <PostCard
             key={post.slug}

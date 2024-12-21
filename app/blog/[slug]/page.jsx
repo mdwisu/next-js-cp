@@ -2,8 +2,13 @@ import Heading from "@/components/Heading";
 import Image from "next/image";
 import React from "react";
 import { marked } from "marked";
-import { getPost } from "@/lib/post";
+import { getPost, getSlugs } from "@/lib/post";
 import ShareLinkButoon from "@/components/ShareLinkButoon";
+
+export async function generateStaticParams() {
+  const slugs = await getSlugs();
+  return slugs.map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
