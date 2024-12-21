@@ -1,0 +1,93 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "documentId": "hgbbn4k82p1r7w4dg2w37utm",
+      "title": "Belajar Strapi",
+      "description": "ini description singkatnya",
+      "body": "ini adalah bodynya dengan **bold**",
+      "slug": "belajar-strapi",
+      "createdAt": "2024-12-21T12:11:44.380Z",
+      "updatedAt": "2024-12-21T12:11:47.269Z",
+      "publishedAt": "2024-12-21T12:11:47.278Z",
+      "image": {
+        "id": 4,
+        "documentId": "nhekbt7ngueneqbjb47umudh",
+        "name": "coffee-art",
+        "alternativeText": "An image uploaded to Strapi called coffee-art",
+        "caption": "coffee-art",
+        "width": 5824,
+        "height": 3259,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_coffee-art",
+            "hash": "thumbnail_coffee_art_cc97bf6196",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 245,
+            "height": 137,
+            "size": 5.86,
+            "sizeInBytes": 5860,
+            "url": "/uploads/thumbnail_coffee_art_cc97bf6196.jpeg"
+          },
+          "large": {
+            "name": "large_coffee-art",
+            "hash": "large_coffee_art_cc97bf6196",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 1000,
+            "height": 559,
+            "size": 40.78,
+            "sizeInBytes": 40778,
+            "url": "/uploads/large_coffee_art_cc97bf6196.jpeg"
+          },
+          "medium": {
+            "name": "medium_coffee-art",
+            "hash": "medium_coffee_art_cc97bf6196",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 750,
+            "height": 419,
+            "size": 27.06,
+            "sizeInBytes": 27063,
+            "url": "/uploads/medium_coffee_art_cc97bf6196.jpeg"
+          },
+          "small": {
+            "name": "small_coffee-art",
+            "hash": "small_coffee_art_cc97bf6196",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 500,
+            "height": 280,
+            "size": 15.27,
+            "sizeInBytes": 15273,
+            "url": "/uploads/small_coffee_art_cc97bf6196.jpeg"
+          }
+        },
+        "hash": "coffee_art_cc97bf6196",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "size": 978.11,
+        "url": "/uploads/coffee_art_cc97bf6196.jpeg",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "createdAt": "2024-12-21T11:40:20.513Z",
+        "updatedAt": "2024-12-21T12:11:25.966Z",
+        "publishedAt": "2024-12-21T11:40:20.514Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}
