@@ -13,6 +13,7 @@ export default async function BlogPage() {
       <p>list of posts</p>
 
       {listPost.map((post) => {
+        console.log(post);
         return (
           <PostCard
             key={post.slug}

@@ -1,5 +1,6 @@
 ---
 title: "Belajar Route Next.js"
+description: "Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications."
 image: "/images/image-2.jpg"
 date: "26/11/2024"
 author: "admin"
