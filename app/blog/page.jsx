@@ -3,6 +3,8 @@ import PostCard from "@/components/PostCard";
 import { getAllPosts } from "@/lib/post";
 import React from "react";
 
+export const revalidate = 30;
+
 export default async function BlogPage() {
   const listPost = await getAllPosts();
 
