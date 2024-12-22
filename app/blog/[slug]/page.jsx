@@ -21,9 +21,9 @@ export async function generateMetadata({ params }) {
 
 export default async function PostPage({ params }) {
   const { slug } = await params;
-  const { data, content } = await getPost(slug);
-  const { title, date, author, image } = data;
-  const html = marked(content);
+  const { title, date, author, image, body } = await getPost(slug);
+
+  const html = marked(body);
 
   return (
     <div>

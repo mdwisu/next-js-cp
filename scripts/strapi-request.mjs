@@ -2,8 +2,7 @@ import { writeFileSync } from "fs";
 import qs from "qs";
 
 const url =
-  "http://127.0.0.1:1337/api/posts/hgbbn4k82p1r7w4dg2w37utm" +
-  "?" +
+  "http://127.0.0.1:1337/api/posts?" +
   qs.stringify(
     {
       filters: {
