@@ -1,4 +1,5 @@
 import Heading from "@/components/Heading";
+import Pagination from "@/components/Pagination";
 import PostCard from "@/components/PostCard";
 import { getAllPosts } from "@/lib/post";
 import Link from "next/link";
@@ -14,12 +15,7 @@ export default async function BlogPage({ searchParams }) {
     <>
       <Heading>Blog</Heading>
       <h2>list of posts</h2>
-      <div className="flex  gap-3 pb-3">
-        <Link href={`/blog?page=${page - 1}`}>&lt;</Link>
-        <span>Page {page} of {pageCount}</span>
-        <Link href={`/blog?page=${page + 1}`}>&gt;</Link>
-      </div>
-
+      <Pagination href="/blog" page={page} pageCount={pageCount} />
       {posts.map((post) => {
         return (
           <PostCard
