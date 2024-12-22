@@ -1,24 +1,54 @@
 {
   "data": [
     {
-      "id": 2,
-      "documentId": "hgbbn4k82p1r7w4dg2w37utm",
-      "slug": "belajar-strapi",
-      "title": "Belajar Strapi",
-      "description": "ini description singkatnya",
-      "publishedAt": "2024-12-21T12:11:47.278Z",
-      "body": "ini adalah bodynya dengan **bold**",
+      "id": 14,
+      "documentId": "jtvsltwijpb9iw5teah650av",
+      "slug": "ayam-penyet-2",
+      "title": "ayam penyet adsf",
+      "description": "ayam penyet 2",
+      "publishedAt": "2024-12-22T07:05:13.067Z",
+      "body": "ayam penyet  update",
+      "image": {
+        "id": 9,
+        "documentId": "le8x9qk9e31lpnj8kvwgvks9",
+        "url": "/uploads/what_s_inside_a_black_hole_7a7ac8a4f5.jpeg"
+      }
+    },
+    {
+      "id": 13,
+      "documentId": "i7htnwzhdaodqymkhb9ug2lh",
+      "slug": "ayam-bawang",
+      "title": "ayam bawang",
+      "description": "ayam bawang",
+      "publishedAt": "2024-12-22T06:58:49.101Z",
+      "body": "ayam bawang",
       "image": {
         "id": 4,
         "documentId": "nhekbt7ngueneqbjb47umudh",
         "url": "/uploads/coffee_art_cc97bf6196.jpeg"
+      }
+    },
+    {
+      "id": 4,
+      "documentId": "xn0v9l3agctuhlkriye7utl3",
+      "slug": "belajar-next-js",
+      "title": "belajar next js",
+      "description": "ini description singkatnya",
+      "publishedAt": "2024-12-21T12:57:08.573Z",
+      "body": "asdfasdfasdfasdf **asdfasdfasfd**",
+      "image": {
+        "id": 8,
+        "documentId": "n7tzjw4z4ugqithixpajonzf",
+        "url": "/uploads/beautiful_picture_754575a9f8.jpeg"
       }
     }
   ],
   "meta": {
     "pagination": {
       "page": 1,
-      "pageSize": 1
+      "pageSize": 3,
+      "pageCount": 2,
+      "total": 4
     }
   }
 }

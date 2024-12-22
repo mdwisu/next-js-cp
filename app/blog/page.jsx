@@ -8,7 +8,7 @@ export const revalidate = 30;
 
 export default async function BlogPage({ searchParams }) {
   const page = parsePageParam((await searchParams)?.page);
-  const listPost = await getAllPosts(3, page);
+  const { pageCount, posts } = await getAllPosts(3, page);
 
   return (
     <>
@@ -16,11 +16,11 @@ export default async function BlogPage({ searchParams }) {
       <h2>list of posts</h2>
       <div className="flex  gap-3 pb-3">
         <Link href={`/blog?page=${page - 1}`}>&lt;</Link>
-        <span>Page {page}</span>
+        <span>Page {page} of {pageCount}</span>
         <Link href={`/blog?page=${page + 1}`}>&gt;</Link>
       </div>
 
-      {listPost.map((post) => {
+      {posts.map((post) => {
         return (
           <PostCard
             key={post.slug}
