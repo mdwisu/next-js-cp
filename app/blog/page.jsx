@@ -7,8 +7,8 @@ import React from "react";
 export const revalidate = 30;
 
 export default async function BlogPage({ searchParams }) {
-  const page = parsePageParam(searchParams.page);
-  const listPost = await getAllPosts();
+  const page = parsePageParam((await searchParams)?.page);
+  const listPost = await getAllPosts(3, page);
 
   return (
     <>
