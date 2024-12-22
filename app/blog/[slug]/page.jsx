@@ -5,6 +5,8 @@ import { getPost, getSlugs } from "@/lib/post";
 import ShareLinkButoon from "@/components/ShareLinkButoon";
 import Image from "next/image";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const slugs = await getSlugs();
   return slugs.map((slug) => ({ slug }));
