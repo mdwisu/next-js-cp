@@ -3,6 +3,7 @@ import React from "react";
 import { marked } from "marked";
 import { getPost, getSlugs } from "@/lib/post";
 import ShareLinkButoon from "@/components/ShareLinkButoon";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   const slugs = await getSlugs();
@@ -33,7 +34,7 @@ export default async function PostPage({ params }) {
         </p>
         <ShareLinkButoon />
       </div>
-      <img src={image} width={500} height={500} alt="image-1" />
+      <Image src={image} width={500} height={500} alt="image-1" />
       <article dangerouslySetInnerHTML={{ __html: html }} className="prose" />
     </div>
   );
