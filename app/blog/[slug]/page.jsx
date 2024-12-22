@@ -1,5 +1,4 @@
 import Heading from "@/components/Heading";
-import Image from "next/image";
 import React from "react";
 import { marked } from "marked";
 import { getPost, getSlugs } from "@/lib/post";
